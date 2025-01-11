@@ -20,11 +20,7 @@ How do we open a pull-request from user2 to user1 and get to the situation below
 
 > [!WARNING]  
 > Over the course of these steps, you will be affecting your local `topic` branch (on your computer) as well as your remote `topic` branch (on Github). These two branches will be reset back to `master` so, please be careful if there are any valuable changes you'd like to preserve for future references. 
-If there are valuable changes on your local branch, `stash` them first by running this command
-    ```
-    git stash push -m 'valuable-changes-for-future-reference
-    ```
-    If there are changes on your remote branch you'd like to preserve, then pull them into your local branch and then stash them. 
+If there are valuable changes on your local branch, `stash` them first by running the command `git stash push -m 'valuable-changes-for-future-reference`. If there are changes on your remote branch you'd like to preserve, then pull them into your local branch and then stash them. 
 
 > [!NOTE]  
 > The below instructions are written for `user1`. "You" refers to `user1`. 
@@ -41,7 +37,9 @@ If there are valuable changes on your local branch, `stash` them first by runnin
   git reset --hard <COMMIT_HASH>
   ```
   To find the `<COMMIT_HASH>` of commit `G` run the command `git log --oneline`. This will list out all the commits and their hashes. In the screenshot below, the yellow alphanumeric string are the commit-hash for each commit.
+  
   <img src="git-log-oneline-commit-hash.png"></img>
+
     Now, you've reset your local `topic` branch back to `master`
 
 * #### Check the status of your local `topic` branch
