@@ -6,3 +6,6 @@ These are some collection of notes that I find myself referencing often.
 
 2. [Pull-Request between two diverging forks](https://github.com/nav-mohan/git_notes/blob/main/Pull-Request-between-diverging-forks/README.MD)
 * Suppose two users fork a topic branch - `github.com/user1/topic` and `github.com/user2/topic`. Now, `user2` performs some rebasing operation (such as reordering or squashing of commits) on their fork thus causing a divergence between `user1` and `user2`. How does `user1` sync their fork with `user2` without having to ___manually repeat the same rebase operation___ but rather through a ___pull-request___ from `user2` to `user1`? 
+
+3. [Basics of Github Actions forks](https://github.com/nav-mohan/git_notes/blob/main/How-To-Github-Actions/README.MD)
+* A boilerplate workflow for running Github Actions on a Node.JS project with Cypress tests. Demonstrates how to use pre-pacakged Github Actions. 
